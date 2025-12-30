@@ -7,7 +7,7 @@ public:
             tops[a.substr(0, 2)].push_back(a[2]);
         }
 
-        // memo[row] = can this row lead to the top?
+        // memo[row] = Can this row lead to the top?
         unordered_map<string, bool> memo;
 
         function<bool(const string&)> canBuild = [&](const string& row) -> bool {
